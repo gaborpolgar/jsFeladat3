@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feladat4</title>
+</head>
+
+<body>
+    <form name="hero_generation">
+        <label for="name">A hős neve:</label>
+        <input type="text" name="name" id="name">
+        <label for="age">Életkor: </label>
+        <input type="text" name="age" id="caste">
+        <br>
+        <br> Nem:
+        <br>
+        <label for="man">Férfi</label>
+        <input type="radio" name="gender" id="man" value="man">
+        <br>
+        <label for="woman">Nő</label>
+        <input type="radio" name="gender" id="woman" value="woman">
+        <br>
+        <label for="race"></label>
+        <select name="race" id="race">
+            <option value="elf">Tünde</option>
+            <option value="dwarf">Törpe</option>
+            <option value="human">Ember</option>
+        </select>
+        <label for="caste">Kaszt: </label>
+        <input type="text" name="kaszt" id="kaszt">
+
+        <br>
+        <p>Képességek(csak kettő választható): </p>
+        <label for="accuracy">pontosság</label>
+        <input type="checkbox" name="ability[]" id="accuracy" value="accuracy">
+        <label for="stamina">állóképsség</label>
+        <input type="checkbox" name="ability[]" id="stamina" value="stamina">
+        <label for="agility">gyorsaság</label>
+        <input type="checkbox" name="ability[]" id="agility" value="agility">
+        <br>
+        <button type="button" id="apply">Generál</button>
+
+    </form>
+
+
+    <script src="taskfour.js "></script>
+</body>
+
+</html>
