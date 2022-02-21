@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feladat2</title>
+</head>
+
+<body>
+    <form name="form" id="form">
+        <p>A megrendelő adatai:</p>
+        <br>
+        <label for="name">Teljes név: </label>
+        <input type="text" name="name" id="name" placeholder=teljes_név>
+        <br>
+        <label for="phone_number">Telefonszám: </label>
+        <input type="text" name="phone_number" id="phone_number" placeholder="+36*0-****-***">
+        <br>
+        <label for="address">lakcím: </label>
+        <input type="text" name="address" id="address" placeholder="irányítószám_város_utca_házszám">
+        <p>A pizza adatai</p>
+        <label for="base">A pizza alapja: </label>
+        <select name="base" id="base">
+        <option value="withsourcream">tejfölös</option>
+        <option value="withtomato">paradicsomos</option>
+    </select>
+        <p>A pizza feltétei:</p>
+        <label for="ham">sonka</label>
+        <input type="checkbox" name="toppings[]" id="ham" value="ham">
+        <label for="corn">kukorica</label>
+        <input type="checkbox" name="toppings[]" id="corn" value="corn">
+        <label for="bacon">bacon</label>
+        <input type="checkbox" name="toppings[]" id="bacon" value="bacon">
+        <label for="egg">tojás</label>
+        <input type="checkbox" name="toppings[]" id="egg" value="egg">
+        <label for="pineapple">ananász</label>
+        <input type="checkbox" name="toppings[]" id="pineapple" value="pineapple">
+
+        <label for="note"></label>
+        <input type="text" name="note" id="note">
+        <button type="button" id="order">felvétel</button>
+    </form>
+    <script src="form.js"></script>
+</body>
+
+</html>
